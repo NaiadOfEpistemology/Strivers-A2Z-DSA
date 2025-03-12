@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner scanner=new Scanner(System.in); //Scanner class is used to take input
+        System.out.print("enter a: ");
+        int a=scanner.nextInt(); //integer input
+        System.out.print("enter b: ");
+        float b=scanner.nextFloat(); //float input
+        scanner.nextLine();
+        System.out.print("what's your name? ");
+        String name=scanner.nextLine(); //string input
+        int sum=a+b;
+        System.out.println("Sum of "+a+" and "+b+" gives "+sum+". Nice meeting you, "+name);
+    }
+}
