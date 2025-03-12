@@ -1,0 +1,18 @@
+//class is a user defined datatype
+public class Main{
+  public static void main(String[] args){
+    //primitive datatypes
+    byte a=2;
+    short a1=200;
+    int a=33000;
+    long a2=10000000;
+    float b=15.5;
+    double d=10000000.01;
+    char a='a';
+    //derived datatypes
+    String x="apple";
+    int a[]={10,20,30,40,50};
+		for(int i=0;i<4;i++){
+		    System.out.println(a[i]);
+  }
+}
