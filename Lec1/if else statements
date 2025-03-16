@@ -1,0 +1,50 @@
+public class Main{
+    public static void main(String[] args){
+        int x=2;
+        char c='a';
+        if(x==3){
+            System.out.println(3); //simple if
+        }
+        if(x%2==0){
+            System.out.println("even num, if-else");
+        }
+        else{
+            System.out.println("odd num, if-else");
+        } //if-else
+        if(x==1){
+            System.out.println("1. if else-if else");
+        }
+        else if(x==2){
+            System.out.println("2. if else-if else");
+        }
+        else if(x==3){
+            System.out.println("3. if else-if else");
+        }
+        else{
+            System.out.println("nothing!");
+        } //if-else if-else
+        if(x!=0){
+            if(x==2){
+                System.out.println("this number is 2"); //nested if
+            }
+            else{
+                System.out.println("this number is not 2");
+            }
+        }
+        else{
+            System.out.println("this number is 0"); 
+        }
+        switch (c){
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                System.out.println("vowel");
+                break;
+            default:
+                System.out.println("consonant or invalid character");
+                break; //switch case
+        }
+    }
+}
