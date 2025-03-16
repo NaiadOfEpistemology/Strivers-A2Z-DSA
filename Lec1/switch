@@ -1,0 +1,14 @@
+public class Main{
+  public static void main(String[] args){
+switch (c){
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                System.out.println("vowel");
+                break;
+            default:
+                System.out.println("consonant or invalid character");
+                break; //switch case
+        }
