@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=n;j>=i;j--){
+                System.out.print(n-j+1);
+            }
+            System.out.println();
+        }
+    }
+}
+OUTPUT : 
+12345
+1234
+123
+12
+1
