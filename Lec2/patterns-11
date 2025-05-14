@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        int i,j;
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        for(i=1;i<=n;i++){
+            int p;
+            if(i%2==0){
+                p=0;
+            }
+            else{
+                p=1;
+            }
+            for(j=1;j<=i;j++){
+                    System.out.print(p+" ");
+                    p=1-p;
+                }
+            System.out.println();
+        }
+    }
+}
+OUTPUT : 
+1 
+0 1 
+1 0 1 
+0 1 0 1 
+1 0 1 0 1 
