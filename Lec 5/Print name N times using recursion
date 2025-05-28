@@ -1,0 +1,22 @@
+public class Main{
+    static void printSomething(int n){
+        if (n == 0) return;             
+        System.out.println("Cat");  
+        printSomething(n - 1);              
+    }
+    public static void main(String[] args){
+        int n=10;               
+        printSomething(10);
+    }
+}
+OUTPUT : 
+Cat
+Cat
+Cat
+Cat
+Cat
+Cat
+Cat
+Cat
+Cat
+Cat
