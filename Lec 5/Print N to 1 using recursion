@@ -1,0 +1,22 @@
+public class Main{
+    static void countNumbers(int n){
+        if(n==0) return;
+        System.out.println(n); 
+        countNumbers(n-1);
+    }
+    public static void main(String[] args){
+        int n=10;               
+        countNumbers(10);
+    }
+}
+OUTPUT :
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
