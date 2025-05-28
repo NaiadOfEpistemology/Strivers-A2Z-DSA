@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main{
+	public static void main(String[] args){
+		int num,i;
+		Scanner scn=new Scanner(System.in);
+		num=scn.nextInt();
+		System.out.print("Divisors of "+num+": ");
+		for(i=1;i<=num;i++){
+		    if(num%i==0){
+		        System.out.print(i+" ");
+		    }
+		}
+	}
+}
+OUTPUT : 
+100
+Divisors of 100: 1 2 4 5 10 20 25 50 100 
