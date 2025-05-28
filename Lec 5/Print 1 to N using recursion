@@ -1,0 +1,23 @@
+public class Main{
+    static void countNumbers(int n){
+        if(n==0) return;
+        int i=1;       
+        countNumbers(n - 1);
+        System.out.println(n); 
+    }
+    public static void main(String[] args){
+        int n=10;               
+        countNumbers(10);
+    }
+}
+OUTPUT : 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
