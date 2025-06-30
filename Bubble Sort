@@ -1,0 +1,25 @@
+public class BSort {
+    public static void main(String[] args){
+        int[] arr={99,34,5,1,45,89};
+        int i=0,j,temp;
+        while(i<arr.length-1){
+            j=0;
+            while(j<(arr.length)-1-i){
+                if(arr[j+1]<arr[j]){
+                    temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+                j++;
+            }
+            i++;
+        }
+        System.out.println("Sorted array:");
+        for(i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+OUTPUT : 
+Sorted array:
+1 5 34 45 89 99
