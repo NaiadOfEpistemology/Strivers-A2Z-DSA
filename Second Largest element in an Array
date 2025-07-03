@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class SSort {
+    public static void main(String[] args) {
+        List<Integer> arr = Arrays.asList(99, 34, 5, 1, 45, 89);
+        int max=Integer.MIN_VALUE;
+        int secondmax=Integer.MIN_VALUE;
+        for(int num:arr){
+            if(num>max){
+                secondmax=max;
+                max=num;
+            
+            }
+            else if(num>secondmax && num!=max){
+                secondmax=num;
+            }
+        }
+        if(secondmax==Integer.MIN_VALUE){
+            System.out.println("No second largest element found.");
+        } else {
+            System.out.println("Second largest " + secondmax);
+        }
+
+    }
+}
+OUTPUT : 
+Second largest 89
