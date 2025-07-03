@@ -1,0 +1,14 @@
+import java.util.*;
+import java.lang.*;
+public class SSort {
+    public static void main(String[] args){
+        int[] arr={99, 1, 34, 45, 5, 1, 45, 34, 89, 99};
+        Set<Integer> set = new LinkedHashSet<>();
+        for(int num:arr){
+            set.add(num);
+        }
+        System.out.println("Removed duplicates : "+set);
+    }
+}
+OUTPUT : 
+Removed duplicates : [99, 1, 34, 45, 5, 89]
