@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {99, 34, 5, 1, 45, 89};
+        boolean flag=false;
+        int i;
+        Scanner s=new Scanner(System.in);
+        int ele=s.nextInt();
+        for(i=0;i<arr.length;i++){
+            if(arr[i]==ele){
+                flag=true;
+                System.out.println(ele+" found at index "+i);
+                break;
+            }
+        }
+        if(!flag){
+            System.out.println(-1);
+        }
+    }
+}
+
+OUTPUT : 
+0
+-1
+45
+45 found at index 4
