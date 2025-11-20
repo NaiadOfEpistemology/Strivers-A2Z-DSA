@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int[] arr={4,4,2,4,3,4,4,3,2,4};
+		HashMap<Integer, Integer> map =new HashMap<>();
+		for(int x:arr){
+		    map.put(x,map.getOrDefault(x,0)+1);
+		}
+		int n=5;
+	
+		for (int k:map.keySet()){
+		    if(map.get(k) > n/2){
+                System.out.println(k);
+                return;
+            }
+		}
+	}
+}
