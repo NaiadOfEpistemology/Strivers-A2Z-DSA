@@ -1,0 +1,34 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int[] arr={5,2,-7,-8,3,1,-6,9,-4,-10,3,2};
+		ArrayList<Integer> posarr=new ArrayList<>();
+		ArrayList<Integer> negarr=new ArrayList<>();
+		ArrayList<Integer> altarr=new ArrayList<>();
+		for(int i=0;i<arr.length;i++){
+		    if(arr[i]>=0){
+		        posarr.add(arr[i]);
+		    }
+		    else{
+		        negarr.add(arr[i]);
+		    }
+		}
+		int a=0,b=0;
+		while(a<posarr.size()&&b<negarr.size()){
+		    altarr.add(posarr.get(a));
+		    altarr.add(negarr.get(b));
+		    a++;
+		    b++;
+		}
+		while(a<posarr.size()){
+		    altarr.add(posarr.get(a++));
+		}
+		while(b<negarr.size()){
+		    altarr.add(negarr.get(b++));
+		}
+		for(int i=0;i<altarr.size();i++){
+		    System.out.print(altarr.get(i)+" ");
+		}
+	}
+}
