@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int[] arr={4,-4,-2,4,-3,4,-4,3,1,0};
+		int m=Integer.MIN_VALUE;
+		int c=0;
+		for (int x:arr){
+		    c+=x;
+		    m=Math.max(m,c);
+		    
+		}
+		if(c<0){
+		    c=0;
+		}
+		System.out.println(m);
+	}
+}
